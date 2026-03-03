@@ -1,7 +1,7 @@
 // ---------------------------------------------------------------------
 // Aspen Cristobal
-// CS3b - lab-LOREM_NUM-LOREM_ASSIGN
-// mm/dd/2026
+// CS3b - lab-6-1
+// 3/10/2026
 // ---------------------------------------------------------------------
 // 	PURPOSE:
 // LOREM
@@ -15,7 +15,7 @@
 .global _start	// Provide program starting address 
 
 // functions
-//.extern funcName
+.extern getstring
 
 _start: 
 	.EQU SYS_exit,  93	// exit() supervisor call code 
