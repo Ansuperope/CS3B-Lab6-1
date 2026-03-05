@@ -6,7 +6,6 @@ services:
       context: .
       dockerfile: Dockerfile
     platform: linux/arm64
-    container_name: arm64-dev
     volumes:
       - .:/workspace
     working_dir: /workspace
