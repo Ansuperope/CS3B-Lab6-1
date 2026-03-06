@@ -39,7 +39,7 @@ _start:
 	// TERMINATE PROGRAM
 	// -----------------------------------------------------------------
 	MOV X0, #0			// set return code to 0, all good 
-	MOV X8, #SYS_exit	// set exit() supervisor call code 
+	MOV X8, SYS_exit	// set exit() supervisor call code 
 	SVC 0				// call Linux to exit 
 
 	.data	// data section
