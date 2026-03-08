@@ -4,13 +4,18 @@
 // 3/10/2026
 // ---------------------------------------------------------------------
 // 	PURPOSE:
-// LOREM
+// Calls getstring to get input from user and output to screen
 // ---------------------------------------------------------------------
 //	VARAIBLES:
-// LOREM
+// X0: varaible for string
+// X1: max length
 // ---------------------------------------------------------------------
 // 	PSUEDOCODE:
-// LOREM
+// 1. Initalize varaibles:
+//	a. X0 = string
+//	b. X1 = max length
+// 2. Pass varaibles to function
+// 3. End program
 // ---------------------------------------------------------------------
 .global _start	// Provide program starting address 
 

@@ -17,7 +17,14 @@
 //  All AAPCS mandated registers are preserved.
 // ---------------------------------------------------------------------
 // 	PSUEDOCODE:
-// LOREM
+// 1. Get variables from main and save them
+// 2. Get input from user
+// 3. Process input
+//	a. make sure input isnt over max length
+//	b. make last letter \0
+//  c. replace null with \0
+// 4. Output input
+// 5. Return to main
 // ---------------------------------------------------------------------
 .global getstring	// Provide program starting address 
 
