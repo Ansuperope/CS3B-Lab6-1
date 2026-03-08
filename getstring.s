@@ -65,8 +65,8 @@ forEachChar:
 	// -----------------------------------------------------------------
 	// CHECK IF CHARACTER == NULL
 	// -----------------------------------------------------------------
-	LDR  X6, [X3, X5] 	// X6 = string[counter]
-	CMP  X6, #'0'		// X6 == '\n', exit
+	LDRB W6, [X3, X5] 	// X6 = string[counter]
+	CMP  W6, #'\n'		// X6 == '\n', exit
 	B.EQ output
 
 	// -----------------------------------------------------------------
@@ -93,7 +93,7 @@ output:
 
 	MOV X0, STDOUT		// tells program we will output
 	MOV X1, X3			// string to output
-	MOV X2, X4			// number of characters to output
+	MOV X2, X5			// number of characters to output
 	MOV X8, SYS_write	// Linux write() sys call
 	SVC 0				// call Linux to execute commands
 
